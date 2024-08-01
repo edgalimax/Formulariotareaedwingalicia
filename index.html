@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="personal-info-form">
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Ingrese su nombre" required>
+            </div>
+            
+            <!-- Apellido -->
+            <div class="form-group">
+                <label for="last-name">Apellido:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Ingrese su apellido" required>
+            </div>
+
+            <!-- Deporte Favorito -->
+            <div class="form-group">
+                <label for="favorite-sport">Deporte Favorito:</label>
+                <select id="favorite-sport" name="favorite-sport" required>
+                    <option value="">Seleccione un deporte</option>
+                    <option value="futbol">Fútbol</option>
+                    <option value="baloncesto">Baloncesto</option>
+                    <option value="beisbol">Béisbol</option>
+                    <option value="tenis">Tenis</option>
+                    <option value="natacion">Natación</option>
+                </select>
+            </div>
+
+            <!-- Género -->
+            <div class="form-group">
+                <label for="gender">Género:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Seleccione su género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <!-- Departamento de Guatemala -->
+            <div class="form-group">
+                <label for="state">Departamento de Guatemala:</label>
+                <select id="state" name="state" required>
+                    <option value="">Seleccione un departamento</option>
+                    <option value="guatemala">Guatemala</option>
+                    <option value="sacatepequez">Sacatepéquez</option>
+                    <option value="chimaltenango">Chimaltenango</option>
+                    <option value="escuintla">Escuintla</option>
+                    <option value="santa-rosa">Santa Rosa</option>
+                    <option value="solola">Sololá</option>
+                    <option value="totonicapan">Totonicapán</option>
+                    <option value="quetzaltenango">Quetzaltenango</option>
+                    <option value="suchitepequez">Suchitepéquez</option>
+                    <option value="retalhuleu">Retalhuleu</option>
+                    <option value="san-marcos">San Marcos</option>
+                    <option value="huehuetenango">Huehuetenango</option>
+                    <option value="quiche">Quiché</option>
+                    <option value="baja-verapaz">Baja Verapaz</option>
+                    <option value="alta-verapaz">Alta Verapaz</option>
+                    <option value="peten">Petén</option>
+                    <option value="izabal">Izabal</option>
+                    <option value="zacapa">Zacapa</option>
+                    <option value="chiquimula">Chiquimula</option>
+                    <option value="jalapa">Jalapa</option>
+                    <option value="jutiapa">Jutiapa</option>
+                    <option value="el-progreso">El Progreso</option>
+                </select>
+            </div>
+
+            <!-- Modelos de Autos -->
+            <div class="form-group">
+                <label>Modelos de Autos Propios:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="car-models" value="ford"> Ford</label>
+                    <label><input type="checkbox" name="car-models" value="chrysler"> Chrysler</label>
+                    <label><input type="checkbox" name="car-models" value="toyota"> Toyota</label>
+                    <label><input type="checkbox" name="car-models" value="nissan"> Nissan</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
